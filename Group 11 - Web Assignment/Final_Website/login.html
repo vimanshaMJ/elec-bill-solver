@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href = "lstyle.css">
+
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    
+
+
+
+    <div class="box">
+     <div class="container">
+ 
+         <div class="top">
+             <span>Have an account?</span>
+             <header>Payment Login</header>
+         </div>
+ 
+         <div class="input-field">
+             <input type="text" class="input" placeholder="Username" id="uname">
+             <i class='bx bx-user' ></i>
+         </div>
+ 
+         <div class="input-field">
+             <input type="Password" class="input" placeholder="Password" id="pwd">
+             <i class='bx bx-lock-alt'></i>
+         </div>
+ 
+         <div class="input-field">
+             <input type="submit" class="submit" value="Login" id="" onclick = "func()">
+         </div>
+ 
+         <div class="two-col">
+             <div class="one">
+                <input type="checkbox" name="" id="check">
+                <label for="check"> Remember Me</label>
+             </div>
+             <div class="two">
+                 <label><a href="registration.html">Register New</a></label>
+             </div>
+         </div>
+     </div>
+ </div>  
+
+ <script>
+    function func()
+    {
+        var uname = document.getElementById("uname").value;
+        var pwd = document.getElementById("pwd").value;
+
+        if(uname == "")
+        {
+            alert("Usernname cannot be empty");
+            return false;
+        }
+        else if(pwd == "")
+        {
+            alert("Password cannot be empty");
+            return false;
+        }
+        else if(uname == 'user' && pwd == '123')
+        {
+            alert("Successfully Login");
+            window.location.assign("payment.html");
+        }
+        else
+        {
+            alert("Invalid Username or Password. Please try again");
+        }
+        
+    }
+    
+ </script>
+ </body>
+ </html>

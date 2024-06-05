@@ -1,0 +1,71 @@
+body{  
+    background-image: url(IMG/Elec.jpg);
+    background-size: cover;
+}
+
+*{
+    color: #fafafa;
+}
+
+#pmr{
+    color: #080808;
+    font-weight:bolder ;
+ }
+
+ #cmr{
+    color: #080808;
+    font-weight:bolder ;
+ }
+
+#date1{
+   color: #080808;
+   font-weight:bolder ;
+}
+
+#pmr1{
+    color: #080808;
+    font-weight:bolder ;
+ }
+
+ #cmr1{
+    color: #080808;
+    font-weight:bolder ;
+ }
+
+ #units1{
+    color: #080808;
+    font-weight:bolder ;
+ }
+
+ #result{
+    color: #080808;
+    font-weight:bolder ;
+ }
+
+input[type = "submit"]{
+    width: 50%;
+    background-color: #76d4f9;
+    color: rgba(2, 1, 25, 0.62);
+    cursor: pointer;
+    font-weight: bold;
+} 
+
+.oval{
+    background-color: #86e3f165;
+    width: 500px;
+    height: 80px;
+    justify-content: center;
+    
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-left: 520px;
+}
+
+.text1{
+    text-align: center;
+    padding-top: 200px;
+    justify-content: center;
+    margin-left: 250px;
+    color:#fff
+}

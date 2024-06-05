@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel = "stylesheet" href="header.css">
+    <link rel = "stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+
+
+    <style>
+
+    a{
+         text-decoration: none;
+     }
+
+    .carousel-inner img {
+        width: 100%;
+        margin: auto;
+        opacity: 0.7;
+    }
+
+    .container {
+        padding: 80px 120px;
+    }
+    .btn {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 0;
+        transition: .2s;
+    }
+    .btn:hover,
+    .btn:focus {
+        border: 1px solid red;
+        background-color: red;
+        color: white;
+    }
+    #title{
+        padding-top: 15pt;
+    }
+    #tabs{
+        padding-top: 14pt;
+        padding-left: 600pt;
+    }
+    #bg-img {
+        background-image: url('IMG/R.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 20%;
+        background-size: cover;
+        height: 500px;
+    }
+
+    .content{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0,0,0,0,6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0.5;
+        transition: 0.6s;
+
+    }
+
+    .content:hover{
+        opacity: 5;
+
+    }
+
+    .content h1{
+        text-align: center;
+        font-size: 100px;
+        color: #000000;
+        margin-bottom: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: -1px 1px 0 #fcc74d,
+                     1px 1px 0 #fcc74d,
+                        1px -1px 0 #fcc74d,
+                    -1px -1px 0 #fcc74d;
+    }
+
+    .content h2{
+        font-size: 100px;
+        color: #000000;
+        margin-bottom: 15px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: -1px 1px 0 #ffffff,
+                     1px 1px 0 #ffffff,
+                        1px -1px 0 #ffffff,
+                    -1px -1px 0 #ffffff;
+    }
+
+    .content h3{
+        color: rgb(248, 248, 79);
+        font-size: 80px;
+        margin-bottom: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: -1px 1px 0 #000,
+                     1px 1px 0 #000,
+                        1px -1px 0 #000,
+                    -1px -1px 0 #000;
+    }
+
+    .content >*{
+        transform: translateY(25px);
+        transition: transform 0.6s ;
+    }
+
+    .content:hover > *{
+        transform: translateY(0px);
+    }
+    </style>
+
+
+
+
+</head>
+<body>
+    <header class = "navbar-fixed-top">
+        <div class = "logo" id ="title">Eleck Bill Solver</div>
+        <div class = "hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class = "nav-bar navbar-right">
+            <ul class ="navbar-fixed-top" id ="tabs">
+                <li>
+                    <a href="home.html" class = "active">Home</a>
+                </li>
+                <li>
+                    <a href ="index.html">Details</a>
+                </li>
+                <li>
+                    <a href ="Services.html">Services</a>
+                </li>
+                <li>
+                    <a href ="Aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="login.html">Payment</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Carousel-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="IMG/1.jpg" alt="electricity" class="d-block w-100" width="1200" height="700">
+            <div class="content"><h1><b>Generation <br>Data</b></h1></div>
+        </div>
+
+        <div class="item">
+            <img src="IMG/2.jpg" alt="electric" width="1200" height="700">
+            <div class="content"><h3>Power up your savings!<br>Calculate your electricity bill with ease</h3></div>
+        </div>
+
+        <div class="item">
+            <img src="IMG/3.jpg" alt="electri" width="1200" height="700">
+            <div class="content"><h2>Crack the cost code</h2></div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class ="container text-center">
+<br/>
+<p><h3>Welcome to our Electricity Bill Calculator, your one-stop destination for accurately estimating your electricity
+consumption and calculating your monthly bills. As electricity costs continue to rise, it's essential to have a reliable
+tool that helps you understand and manage your energy usage effectively. Our user-friendly website provides an intuitive
+interface and advanced algorithms to provide you with precise estimates of your electricity expenses, empowering you to
+make informed decisions and take control of your energy consumption.<br/><br/>
+With our Electricity Bill Calculator, you can effortlessly calculate your electricity consumption by inputting essential
+information such as your monthly kWh usage, tariff rates, and any additional charges. Whether you're a residential
+customer, a small business owner, or even a large industrial facility, our calculator accommodates various types of
+consumers, ensuring accuracy and flexibility in your calculations.<br/><br/>
+Understanding your electricity bill can often be challenging, with complex tariff structures and varying rates for
+different usage tiers. Our website simplifies the process by breaking down your expenses, providing you with a clear
+breakdown of your consumption and corresponding charges. By visualizing your electricity usage and expenditure, you can
+identify areas where you can optimize energy consumption, conserve electricity, and potentially save on your monthly
+bills.<br/><br/>
+In addition to its efficiency and ease of use, our Electricity Bill Calculator takes into account the latest tariff
+rates and regulatory changes, ensuring that the calculations are up to date and accurate. With this valuable information
+at your fingertips, you can proactively monitor your energy consumption patterns, make educated choices to reduce your
+carbon footprint, and ultimately contribute to a greener and more sustainable future.<br/><br/>
+Whether you're budgeting for your household expenses, managing your business's operational costs, or simply curious
+about your energy consumption, our Electricity Bill Calculator is here to assist you. Take advantage of our
+comprehensive tool and start optimizing your energy usage today. Empower yourself with knowledge, save money, and
+contribute to a more sustainable tomorrow.<br/><br/>
+</h3></p>
+</div>
+
+<div id="bg-img">
+    <div class="container">
+        <br />
+        <h3 class="text-center" style="color: white; padding-top: 70pt;"><em>"Electricity is not just a utility; it is a lifeline that powers our modern world, fuels innovation, and illuminates our
+        lives."</em></h3>
+    </div>
+</div>
+
+<div id="contact" class="container">
+    <h3 class="text-center">CONTACT</h3>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <button class="btn pull-right" type="submit">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<footer>
+    <div class="footer-content">
+      <p id ="p1">©2023. Group 11. All rights reserved.</p>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Details</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="login.html">Payment</a></li>
+      </ul>
+    </div>
+</footer>
+
+
+</body>
+</html>

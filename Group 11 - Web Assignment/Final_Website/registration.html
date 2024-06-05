@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel = "stylesheet" href ="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div>
+       <div class = "container">
+            <div class = "title">Registration</div>
+            <form action = "login.html" name="form1">
+                <div class ="user-details">
+                    <div class = "input-box">
+                        <span class = "details"> Full Name</span>
+                        <input type = "text" name="fname" placeholder="Enter your name" required>
+                    </div>
+                    <div class = "input-box">
+                        <span class = "details"> Address</span>
+                        <input type = "text" name= "address" placeholder="Enter your address" required>
+                    </div>
+                    <div class = "input-box">
+                        <span class = "details"> District</span>
+                        <input type = "text" name ="district" placeholder="Enter your district" required>
+                    </div>
+                    <div class = "input-box">
+                        <span class = "details"> NIC Number</span>
+                        <input type = "text" name ="nic" placeholder="Enter your nic number" required>
+                    </div>
+                    <div class = "input-box">
+                        <span class = "details"> Telephone Number</span>
+                        <input type = "text" name ="tpnum" placeholder="Enter your telephone number" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type = "radio" name = "gender" id = "dot-1">
+                    <input type = "radio" name = "gender" id = "dot-2">
+                    <input type = "radio" name = "gender" id = "dot-3">
+                    <span class = "gender-title">Gender</span>
+                    <div class = "category">
+                    <label for="dot-1">
+                        <span class = "dot one"></span>
+                        <span class = "gender">Male</span>
+                    </label> 
+                    <label for="dot-2">
+                        <span class = "dot two"></span>
+                        <span class = "gender">Female</span>
+                    </label> 
+                    <label for="dot-3">
+                        <span class = "dot three"></span>
+                        <span class = "gender">Prefer not to say</span>
+                    </label> 
+                    </div>
+                </div>
+                <div class="button">
+                    <input type = "submit" value = "Register" onclick="Validation()">
+                </div>  
+            </form>
+        </div>
+        
+        <div class="popup" id ="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Thank you</h2>
+            <p>Successfully Registered. Username is Admin & Password is 123.
+                Thanks!
+                 </p>
+            <a href ="login.html"><button onclick="CloseSlide()">OK</button></a>
+        </div>
+        -
+
+    </div>
+
+   
+
+    <script>
+    function Validation()
+    {
+    
+    
+    if(document.form1.fname.value=="")
+    {
+        alert("Name must be filled");
+        return false;
+    }
+    if(document.form1.address.value=="")
+    {
+        alert("Address must be filled");
+        return false;
+    }
+    else if(document.form1.district.value=="")
+    {
+        alert("District must be filled");
+        return false;
+    }
+    else if(document.form1.nic.value=="")
+    {
+        alert("NIC must be filled");
+        return false;
+    }
+    else if(document.form1.tpnum.value=="")
+    {
+        alert("Telephone Number must be filled");
+        return false;
+    }
+    else
+    {
+        alert("Successfully Registered. Username is user & Password is 123.Thanks!");
+    }
+    
+}  
+
+
+</script>
+
+</body>
+</html>
